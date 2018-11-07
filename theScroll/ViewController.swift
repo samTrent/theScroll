@@ -8,6 +8,8 @@
 
 import UIKit
 
+var posts: [ArticlePost] = []
+
 //This viewController will serve as the "Home page"
 //It will display the last 10 posts that have been made
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -31,9 +33,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         updateColorOfNavbar(color: UIColor.red)
         updateNavbarTitleColor(color: UIColor.white)
         
-        JSONParser.getFrontPageContent()
+        let jsonParser = JSONParser()
         
+        jsonParser.getFrontPageContent() { (articlePosts, error) in
+
+            if(error != nil)
+            {
+                print(error!)
+            }
+            else
+            {
+               
+                print("Done!")
+                posts = articlePosts
+                print(posts)
+            }
+        }
         
+
+ 
         
         
     }
@@ -41,12 +59,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   
    //TABLE VIEW PROTOCOLS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        print("creating \(posts.count) rows")
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! postTableViewCell
+        
+        let baseURL: URL = URL(string: "https:")!
+        
         
         return cell
     }

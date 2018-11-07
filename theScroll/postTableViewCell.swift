@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import WebKit
 
-class postTableViewCell: UITableViewCell {
-
+class postTableViewCell: UITableViewCell
+{
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
