@@ -14,6 +14,7 @@
 		69D2695721927A03008DEB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D2695621927A03008DEB81 /* Assets.xcassets */; };
 		69D2695A21927A03008DEB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D2695821927A03008DEB81 /* LaunchScreen.storyboard */; };
 		69D2696221927EB0008DEB81 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D2696121927EB0008DEB81 /* JSONParser.swift */; };
+		69D2696421928FA8008DEB81 /* postTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D2696321928FA8008DEB81 /* postTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		69D2695921927A03008DEB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69D2695B21927A03008DEB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D2696121927EB0008DEB81 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		69D2696321928FA8008DEB81 /* postTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				69D2694E21927A03008DEB81 /* ViewController.swift */,
 				69D2696121927EB0008DEB81 /* JSONParser.swift */,
 				69D2695021927A03008DEB81 /* Main.storyboard */,
+				69D2696321928FA8008DEB81 /* postTableViewCell.swift */,
 				69D2695621927A03008DEB81 /* Assets.xcassets */,
 				69D2695821927A03008DEB81 /* LaunchScreen.storyboard */,
 				69D2695B21927A03008DEB81 /* Info.plist */,
@@ -145,6 +148,7 @@
 				69D2694F21927A03008DEB81 /* ViewController.swift in Sources */,
 				69D2696221927EB0008DEB81 /* JSONParser.swift in Sources */,
 				69D2694D21927A03008DEB81 /* AppDelegate.swift in Sources */,
+				69D2696421928FA8008DEB81 /* postTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,7 +41,7 @@ class JSONParser
                         let singlePost = jsonArray[0] as! [String: Any]
                         
                         //now we have access to all the key items!
-                        print(singlePost["author"])
+                        print(singlePost["author"]!)
 
                         
                     }
