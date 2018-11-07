@@ -34,13 +34,15 @@ class JSONParser
                         //the JSON
                         let jsonResult = try JSONSerialization.jsonObject(with: URLContent, options: JSONSerialization.ReadingOptions.mutableContainers)
                         
+                        //turn the JSON result string into an NSArray that we can then loop through if we want
+                        let jsonArray = jsonResult as! NSArray
                         
-                        let result = jsonResult as! NSArray
+                        //convert a single post into a dictionary
+                        let singlePost = jsonArray[0] as! [String: Any]
                         
-                        for ids in result as [AnyObject]
-                        {
-                            print(ids["id"]!)
-                        }
+                        //now we have access to all the key items!
+                        print(singlePost["author"])
+
                         
                     }
                     catch
